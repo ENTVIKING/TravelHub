@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Travel Hub</string>
+    <string name="open_drawer_layout">Open Drawer Layout</string>
+    <string name="close_drawer_layout">Close Drawer Layout</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="SkipBtn">رد کردن</string>
+</resources>

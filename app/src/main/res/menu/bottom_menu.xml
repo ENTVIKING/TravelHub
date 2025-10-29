@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/bottom_nav_profile"
+        android:title="پروفایل"
+        android:icon="@drawable/user"/>
+
+    <item android:id="@+id/bottom_nav_shoping"
+        android:title="سبد خرید"
+        android:icon="@drawable/baseline_add_shopping_cart_24"/>
+
+    <item android:id="@+id/bottom_nav_favorite"
+        android:title="علاقه مندی ها"
+        android:icon="@drawable/baseline_bookmark_added_24"/>
+
+    <item android:id="@+id/bottom_nav_home"
+        android:title="خانه"
+        android:icon="@drawable/home"/>
+
+
+</menu>
