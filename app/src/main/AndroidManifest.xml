@@ -13,6 +13,9 @@
         android:theme="@style/Theme.TravelHub"
         tools:targetApi="31">
         <activity
+            android:name=".Login.LoginActivity"
+            android:exported="false" />
+        <activity
             android:name=".Slider.SliderActivity"
             android:exported="false" />
         <activity
