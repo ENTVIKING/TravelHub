@@ -15,7 +15,7 @@ import com.example.travelhub.R;
 public class LoginActivity extends AppCompatActivity {
     LinearLayout linear;
     ImageView userimg;
-    
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,13 +32,23 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onFocusChange(View v, boolean hasFocus) {
                 if (!hasFocus){
-                    if (edtUsername.getText().toString().equals("enayat")){
-                        userimg.animate().rotationY(90).setDuration(700).setListener(new AnimatorListenerAdapter() {
+                    if (edtUsername.getText().toString().equalsIgnoreCase("enayat")){
+                        userimg.animate().rotationY(90f).setDuration(700).setListener(new AnimatorListenerAdapter() {
                             @Override
                             public void onAnimationEnd(Animator animation) {
                                 super.onAnimationEnd(animation);
                                 userimg.setImageResource(R.drawable.administrator);
-                                userimg.animate().rotationY(0).setDuration(700);
+                                userimg.animate().rotationY(0f).setDuration(700).setListener(null);
+                            }
+                        });
+                    }else {
+                        userimg.animate().rotationY(90f).setDuration(700).setListener(new AnimatorListenerAdapter() {
+                            @Override
+                            public void onAnimationEnd(Animator animation) {
+                                super.onAnimationEnd(animation);
+                                userimg.setImageResource(R.drawable.baseline_account_circle_24);
+                                userimg.animate().rotationY(0f).setDuration(700);
+
                             }
                         });
                     }
