@@ -18,16 +18,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
+        <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/userimg"
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            app:srcCompat="@drawable/baseline_account_circle_24" />
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/baseline_account_circle_24"
+            android:layout_gravity="center"
+            app:civ_border_width="3dp"
+            app:civ_border_color="#FF000000"/>
 
         <TextView
             android:id="@+id/textView5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
             android:layout_gravity="center"
             android:text="@string/txtLoginPage"
             android:textSize="25sp"
@@ -39,7 +43,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:ems="10"
-            android:hint="Username"
+            android:hint="@string/username"
             android:inputType="text" />
 
         <EditText
@@ -48,7 +52,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:ems="10"
-            android:hint="Password"
+            android:hint="@string/password"
             android:inputType="text" />
 
         <Button
@@ -56,8 +60,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:text="Login"
-            android:textSize="20dp" />
+            android:text="@string/login"
+            android:textSize="20sp" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
