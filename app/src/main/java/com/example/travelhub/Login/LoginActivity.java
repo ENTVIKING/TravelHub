@@ -46,7 +46,7 @@ public class LoginActivity extends AppCompatActivity {
                             @Override
                             public void onAnimationEnd(Animator animation) {
                                 super.onAnimationEnd(animation);
-                                userimg.setImageResource(R.drawable.baseline_account_circle_24);
+                                userimg.setImageResource(R.drawable.user);
                                 userimg.animate().rotationY(0f).setDuration(700);
 
                             }
