@@ -30,6 +30,11 @@
                 <item android:title="Rate Applicaton"
                     android:icon="@drawable/baseline_beenhere_24" />
 
+                <item
+                    android:id="@+id/Faq_nav"
+                    android:title="Faq"
+                    android:icon="@drawable/faq" />
+
             </menu>
 
         </item>

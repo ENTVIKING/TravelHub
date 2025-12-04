@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/Lay"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:layout_marginTop="5dp">
+
+    <!-- Title of the section -->
+    <TextView
+        android:id="@+id/txtFaqTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/vazir"
+        android:text="سوالات متداول"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:paddingBottom="5dp"/>
+
+    <!-- dividing line -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DDDDDD"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- List of questions -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerFaq"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="8dp"
+        android:clipToPadding="false"/>
+
+</LinearLayout>

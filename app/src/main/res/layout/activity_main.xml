@@ -9,6 +9,7 @@
 
 
     <RelativeLayout
+        android:layout_marginTop="30dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -25,6 +26,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
+
             <ImageView
                 android:id="@+id/hmenue"
                 android:layout_width="50dp"
@@ -33,6 +35,13 @@
                 android:src="@drawable/menu_8600359__2_" />
         </RelativeLayout>
 
+        <FrameLayout
+            android:id="@+id/fragmentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/toolbar"
+            android:layout_above="@id/bottomNavigation"/>
+
 
         <androidx.viewpager.widget.ViewPager
             android:id="@+id/ViewPagerHome"
@@ -40,6 +49,7 @@
             android:layout_height="match_parent"
             android:layout_above="@+id/bottomNavigation"
             android:layout_below="@+id/toolbar" />
+
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottomNavigation"

@@ -3,6 +3,7 @@
     <style name="Base.Theme.TravelHub" parent="Theme.Material3.DayNight.NoActionBar">
 
         <item name="colorPrimary">#FFC107</item>
+<!--        <item name="android:statusBarColor">#F76A4444</item>-->
         <!-- Customize your dark theme here. -->
         <!-- <item name="colormPrimary">@color/my_dark_primary</item> -->
     </style>

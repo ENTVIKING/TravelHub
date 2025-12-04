@@ -9,4 +9,6 @@
     <string name="password">Password</string>
     <string name="username">Username</string>
     <string name="login">Login</string>
+    <string name="questiontxt1">قهوه چگونه انرژي مورد نیاز انسان را تامین می کند؟</string>
+    <string name="questiontxt2">قهوه چگونه انرژي مورد نیاز انسان را تامین می کند؟</string>
 </resources>

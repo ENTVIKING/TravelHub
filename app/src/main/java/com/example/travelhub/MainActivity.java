@@ -15,8 +15,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 
+import com.example.travelhub.FAQ.FaqActivity;
+import com.example.travelhub.FAQ.FaqAdapter;
+import com.example.travelhub.FAQ.FaqFragment;
 import com.example.travelhub.Login.LoginActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
@@ -52,9 +56,10 @@ public class MainActivity extends AppCompatActivity {
 
                 } else if (item.getItemId() == R.id.settings_nav) {
                     Toast.makeText(MainActivity.this, "تنظیمات", Toast.LENGTH_SHORT).show();
-                } else if (item.getItemId() == R.id.LoginNavmenu) {
-                    startActivity(new Intent(MainActivity.this, LoginActivity.class));
+                } else if (item.getItemId() == R.id.Faq_nav) {
+                    startActivity(new Intent(MainActivity.this, FaqActivity.class));
                 }
+
                 return true;
             }
         });
